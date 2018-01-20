@@ -8,7 +8,7 @@ let timer=setInterval(()=>{
 		})
 	makeCurrent(getImage(n+1))
 	n+=1
-},2000)
+},3000)
 
 //消除页面被隐藏时浏览器产生的bug，visibilitychange事件
 document.addEventListener('visibilitychange',function(e){
@@ -22,7 +22,7 @@ document.addEventListener('visibilitychange',function(e){
 				})
 			makeCurrent(getImage(n+1))
 			n+=1
-		},2000)
+		},3000)
 	}
 
 })
