@@ -1,30 +1,83 @@
 *{margin: 0; padding:0;}
 *{box-sizing: border-box;}
-
+body{
+	background: #F2F2F2;	
+	margin: 0;
+}
+h1{
+	color: #444444;
+	font-family:"Helvetica",sans-serif;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;
+}
+h4{
+	text-align: center;
+	color: #444444;
+	font-weight: normal;
+}
+a{
+	color: #0196e3;
+	text-decoration:none;
+	text-align: center;
+	display: inline-block;
+	margin-top:10px; 
+	font-weight: normal;
+}
+a:hover{
+	text-decoration:underline;
+}
+.container{
+	position: relative;
+}
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
 .window{
-	width:600px;
-	height: 350px;
-	margin: 20px auto;
+	width:900px;
+	height:100%;
+	margin:20px auto;
 	overflow:hidden;
+	box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.64);
 }
 .images{
-	position: relative;
+	display: flex;
+	transition: all 0.3s;
+	
 }
 .images>img{
 	width:100%;
-	transition: all 0.3s;
+}
+#buttonWrapper button{
+	cursor: pointer;
+	border: none;
+	width:55px;
+	height:41px;
+	border-radius:3px;
+	margin-left: 4px;
+}
+#controls svg#previous{
+	cursor: pointer;
+	width:40px;
+	height: 45px;
+	top:347px;
+	left:245px;
 	position: absolute;
-	top:0;
+
 }
-.images>img.current{
-	left: 0;
-	transform: translateX(0);
-	z-index: 1;
+#controls svg#next{
+	cursor: pointer;
+	width:40px;
+	height:45px;
+	top:347px;
+	right:245px;
+	position: absolute;
 }
-.images>img.leave{
-	transform: translateX(-100%);
-	z-index: 1;
-}
-.images>img.enter{
-	transform: translateX(100%);
+#buttonWrapper button svg{
+	width: 35px;
+	height: 30px;
 }
