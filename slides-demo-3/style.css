@@ -3,24 +3,20 @@
 body{
 	background: #F2F2F2;	
 	margin: 0;
+	font-family:"Helvetica",sans-serif;
+	text-align: center;
 }
 h1{
-	color: #444444;
-	font-family:"Helvetica",sans-serif;
 	padding-top: 30px;
-	text-align: center;
 	font-size: 40px;
 	font-weight: normal;
 }
 h4{
-	text-align: center;
-	color: #444444;
 	font-weight: normal;
 }
 a{
 	color: #0196e3;
 	text-decoration:none;
-	text-align: center;
 	display: inline-block;
 	margin-top:10px; 
 	font-weight: normal;
@@ -28,14 +24,11 @@ a{
 a:hover{
 	text-decoration:underline;
 }
+p{
+	font-size: 13px;
+}
 .container{
 	position: relative;
-}
-.icon {
-   width: 1em; height: 1em;
-   vertical-align: -0.15em;
-   fill: currentColor;
-   overflow: hidden;
 }
 .window{
 	width:900px;
@@ -46,19 +39,24 @@ a:hover{
 }
 .images{
 	display: flex;
-	transition: all 0.3s;
-	
+	transition: all .5s;
 }
 .images>img{
 	width:100%;
 }
+.footer{
+	background-color: #F1F1F1;
+}
 #buttonWrapper button{
 	cursor: pointer;
+	display: inline-block;
+	padding: 15px 16px;
 	border: none;
-	width:55px;
-	height:41px;
-	border-radius:3px;
-	margin-left: 4px;
+	border-radius:1px;
+	outline:none; 
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 6px;
 }
 #controls svg#previous{
 	cursor: pointer;
@@ -67,7 +65,6 @@ a:hover{
 	top:347px;
 	left:245px;
 	position: absolute;
-
 }
 #controls svg#next{
 	cursor: pointer;
@@ -76,8 +73,4 @@ a:hover{
 	top:347px;
 	right:245px;
 	position: absolute;
-}
-#buttonWrapper button svg{
-	width: 35px;
-	height: 30px;
 }
