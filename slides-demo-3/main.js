@@ -25,9 +25,6 @@ $('.container').on('mouseenter',function(){
 })
 
 
-
-
-
 function bindEvents(){
 	$('#buttonWrapper').on('click','button',function(e){
 		let $button=$(e.currentTarget)

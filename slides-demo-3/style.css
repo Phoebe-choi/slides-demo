@@ -50,7 +50,7 @@ p{
 #buttonWrapper button{
 	cursor: pointer;
 	display: inline-block;
-	padding: 15px 16px;
+	padding: 16px 20px;
 	border: none;
 	border-radius:1px;
 	outline:none; 
